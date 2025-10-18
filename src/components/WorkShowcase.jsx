@@ -3,21 +3,21 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const tabData = {
   "All": [
-    { title: "Creative Web Design", video: "/src/assets/videos/sample1.mp4", description: "Modern responsive layouts built with React and Tailwind." },
-    { title: "Mobile App Prototype", video: "/src/assets/videos/sample2.mp4", description: "Cross-platform mobile UI using Flutter and Firebase." },
-    { title: "E-Commerce Platform", video: "/src/assets/videos/sample3.mp4", description: "Scalable online shopping system built with Laravel." },
+    { title: "Creative Web Design", video: "/videos/sample1.mp4", description: "Modern responsive layouts built with React and Tailwind." },
+    { title: "Mobile App Prototype", video: "/videos/sample2.mp4", description: "Cross-platform mobile UI using Flutter and Firebase." },
+    { title: "E-Commerce Platform", video: "/videos/sample3.mp4", description: "Scalable online shopping system built with Laravel." },
   ],
   "Web Design": [
-    { title: "Portfolio Website", video: "/src/assets/videos/sample1.mp4", description: "Aesthetic personal portfolio with dynamic animations and sections." },
-    { title: "Agency Landing Page", video: "/src/assets/videos/sample2.mp4", description: "Sleek, responsive landing page for creative agencies." },
+    { title: "Portfolio Website", video: "/videos/sample1.mp4", description: "Aesthetic personal portfolio with dynamic animations and sections." },
+    { title: "Agency Landing Page", video: "/videos/sample2.mp4", description: "Sleek, responsive landing page for creative agencies." },
   ],
   "Mobile Apps": [
-    { title: "Fitness Tracker App", video: "/src/assets/videos/sample3.mp4", description: "Flutter-based app for health and fitness monitoring." },
-    { title: "Food Delivery App", video: "/src/assets/videos/sample4.mp4", description: "Smooth UI/UX with real-time order tracking and Firebase integration." },
+    { title: "Fitness Tracker App", video: "/videos/sample3.mp4", description: "Flutter-based app for health and fitness monitoring." },
+    { title: "Food Delivery App", video: "/videos/sample4.mp4", description: "Smooth UI/UX with real-time order tracking and Firebase integration." },
   ],
   "Full Stack": [
-    { title: "Inventory Management System", video: "/src/assets/videos/sample2.mp4", description: "Laravel and React powered system for managing stock and analytics." },
-    { title: "Real Estate Portal", video: "/src/assets/videos/sample3.mp4", description: "Search, filter, and manage property listings with admin control." },
+    { title: "Inventory Management System", video: "/videos/sample2.mp4", description: "Laravel and React powered system for managing stock and analytics." },
+    { title: "Real Estate Portal", video: "/videos/sample3.mp4", description: "Search, filter, and manage property listings with admin control." },
   ],
 };
 
