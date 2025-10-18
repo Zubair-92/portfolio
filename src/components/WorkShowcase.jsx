@@ -1,29 +1,23 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// Import videos from src/assets/videos
-import sample1 from "../assets/videos/sample1.mp4";
-import sample2 from "../assets/videos/sample2.mp4";
-import sample3 from "../assets/videos/sample3.mp4";
-import sample4 from "../assets/videos/sample4.mp4";
-
 const tabData = {
   "All": [
-    { title: "Creative Web Design", video: sample1, description: "Modern responsive layouts built with React and Tailwind." },
-    { title: "Mobile App Prototype", video: sample2, description: "Cross-platform mobile UI using Flutter and Firebase." },
-    { title: "E-Commerce Platform", video: sample3, description: "Scalable online shopping system built with Laravel." },
+    { title: "Creative Web Design", video: "/videos/sample1.mp4", description: "Modern responsive layouts built with React and Tailwind." },
+    { title: "Mobile App Prototype", video: "/videos/sample2.mp4", description: "Cross-platform mobile UI using Flutter and Firebase." },
+    { title: "E-Commerce Platform", video: "/videos/sample3.mp4", description: "Scalable online shopping system built with Laravel." },
   ],
   "Web Design": [
-    { title: "Portfolio Website", video: sample1, description: "Aesthetic personal portfolio with dynamic animations and sections." },
-    { title: "Agency Landing Page", video: sample2, description: "Sleek, responsive landing page for creative agencies." },
+    { title: "Portfolio Website", video: "/videos/sample1.mp4", description: "Aesthetic personal portfolio with dynamic animations and sections." },
+    { title: "Agency Landing Page", video: "/videos/sample2.mp4", description: "Sleek, responsive landing page for creative agencies." },
   ],
   "Mobile Apps": [
-    { title: "Fitness Tracker App", video: sample3, description: "Flutter-based app for health and fitness monitoring." },
-    { title: "Food Delivery App", video: sample4, description: "Smooth UI/UX with real-time order tracking and Firebase integration." },
+    { title: "Fitness Tracker App", video: "/videos/sample3.mp4", description: "Flutter-based app for health and fitness monitoring." },
+    { title: "Food Delivery App", video: "/videos/sample4.mp4", description: "Smooth UI/UX with real-time order tracking and Firebase integration." },
   ],
   "Full Stack": [
-    { title: "Inventory Management System", video: sample2, description: "Laravel and React powered system for managing stock and analytics." },
-    { title: "Real Estate Portal", video: sample3, description: "Search, filter, and manage property listings with admin control." },
+    { title: "Inventory Management System", video: "/videos/sample2.mp4", description: "Laravel and React powered system for managing stock and analytics." },
+    { title: "Real Estate Portal", video: "/videos/sample3.mp4", description: "Search, filter, and manage property listings with admin control." },
   ],
 };
 
@@ -87,15 +81,13 @@ const WorkShowcase = () => {
               >
                 {/* Video */}
                 <motion.video
+                  src={project.video}
                   autoPlay
                   loop
                   muted
                   playsInline
                   className="w-full h-64 object-cover transition-transform duration-[2000ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-110"
-                >
-                  <source src={project.video} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </motion.video>
+                />
 
                 {/* Details Overlay */}
                 <motion.div
