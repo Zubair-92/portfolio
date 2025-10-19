@@ -11,7 +11,7 @@ const skills = [
   { icon: <SiFlutter size={28} />, title: "Flutter" },
   { icon: <FaHtml5 size={28} />, title: "HTML / CSS / Bootstrap" },
   { icon: <SiPostman size={28} />, title: "Postman / REST API" },
-  { icon: <SiGit size={28} />, title: "Git / Gitea" },
+  { icon: <SiGit size={28} />, title: "Git / Github / Gitea" },
   { icon: <SiGodaddy size={28} />, title: "GoDaddy / Live Hosting" },
 ];
 
