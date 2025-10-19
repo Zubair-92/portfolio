@@ -13,7 +13,6 @@ const skills = [
   { icon: <SiPostman size={28} />, title: "Postman / REST API" },
   { icon: <SiGit size={28} />, title: "Git / Gitea" },
   { icon: <SiGodaddy size={28} />, title: "GoDaddy / Live Hosting" },
-  { icon: <SiTailwindcss size={28} />, title: "Tailwind CSS" },
 ];
 
 const About = () => {
