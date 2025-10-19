@@ -116,16 +116,17 @@ const Hero = () => {
             },
             {
               icon: <Linkedin size={18} />,
-              href: "https://www.linkedin.com/in/subair-ms-b98635203",
+              href: "https://www.linkedin.com/in/yourprofile",
               bg: "from-green-400 to-cyan-400",
               tooltip: "LinkedIn",
               target: "_blank",
             },
             {
               icon: <MessageCircle size={18} />,
-              href: "#",
-              bg: "from-green-500 to-green-400",
-              tooltip: "+974 5014 3321",
+              href: "https://wa.me/97450143321", // ✅ WhatsApp direct chat link
+              bg: "from-[#25D366] to-[#20c35a]", // official WhatsApp green gradient
+              tooltip: "Chat on WhatsApp",
+              target: "_blank",
             },
           ].map((item, idx) => (
             <div key={idx} className="relative group flex justify-center">
