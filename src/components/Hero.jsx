@@ -14,7 +14,11 @@ const Hero = () => {
     >
       {/* Background image */}
       <div className="absolute inset-0 -z-10">
-        <img src={heroBg} alt="Hero Background" className="w-full h-full object-cover" />
+        <img
+          src={heroBg}
+          alt="Hero Background"
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
@@ -49,7 +53,7 @@ const Hero = () => {
           />
         </div>
 
-        {/* Circles + Full Stack Developer */}
+        {/* Circles + Title */}
         <div className="relative flex items-center justify-start mb-8">
           {circles.map((i) => (
             <motion.div
@@ -95,41 +99,41 @@ const Hero = () => {
           smooth performance, and powerful design.
         </motion.p>
 
-        {/* Hero Contacts (Circular Icons + Tooltip for WhatsApp) */}
-        <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-4 mt-6 flex-wrap">
+        {/* Hero Contact Icons */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:flex justify-center md:justify-start items-center gap-4 mt-6 flex-wrap">
           {[
             {
-              icon: <Phone size={20} />,
+              icon: <Phone size={18} />,
               href: "tel:+97450143321",
               bg: "from-cyan-500 to-blue-500",
               tooltip: "Call Me",
             },
             {
-              icon: <Mail size={20} />,
+              icon: <Mail size={18} />,
               href: "mailto:sbwebofficial92@gmail.com",
               bg: "from-purple-500 to-pink-500",
               tooltip: "Email Me",
             },
             {
-              icon: <Linkedin size={20} />,
+              icon: <Linkedin size={18} />,
               href: "https://www.linkedin.com/in/subair-ms-b98635203",
               bg: "from-green-400 to-cyan-400",
               tooltip: "LinkedIn",
               target: "_blank",
             },
             {
-              icon: <MessageCircle size={20} />,
+              icon: <MessageCircle size={18} />,
               href: "#",
               bg: "from-green-500 to-green-400",
               tooltip: "+974 5014 3321",
             },
           ].map((item, idx) => (
-            <div key={idx} className="relative group">
+            <div key={idx} className="relative group flex justify-center">
               <motion.a
                 href={item.href}
                 target={item.target || "_self"}
                 rel="noopener noreferrer"
-                className={`flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-r ${item.bg} text-white shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300`}
+                className={`flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-r ${item.bg} text-white shadow-md hover:scale-110 hover:shadow-lg transition-transform duration-300`}
                 whileHover={{ scale: 1.1 }}
               >
                 {item.icon}
